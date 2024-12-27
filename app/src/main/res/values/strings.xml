@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SoundWave</string>
+    <string name="login">Login</string>
+    <string name="enter_your_mobile_no">enter your mobile no</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_email">enter your email</string>
+    <string name="soundwave">SoundWave</string>
+    <string name="enter_url_here">Enter Url here</string>
+    <string name="search">Search</string>
+</resources>

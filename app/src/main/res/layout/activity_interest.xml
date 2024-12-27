@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soundwave_background"
+    android:hapticFeedbackEnabled="true"
+    tools:context=".Interest">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".Interest">
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="71dp"
+            android:layout_marginBottom="171dp"
+            android:background="@color/white"
+            android:hapticFeedbackEnabled="true"
+            android:text="CheckBox"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/design_default_color_secondary"
+            android:textColorHint="@color/black"
+            android:textColorLink="@color/design_default_color_secondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox5"
+            app:useMaterialThemeColors="false" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:hapticFeedbackEnabled="true"
+            android:text="CheckBox"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/design_default_color_secondary"
+            android:textColorHint="@color/black"
+            android:textColorLink="@color/design_default_color_secondary"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox6"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox6"
+            app:layout_constraintStart_toStartOf="@+id/checkBox6"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox4"
+            app:useMaterialThemeColors="false" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="23dp"
+            android:background="@color/white"
+            android:hapticFeedbackEnabled="true"
+            android:text="CheckBox"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/design_default_color_secondary"
+            android:textColorHint="@color/black"
+            android:textColorLink="@color/design_default_color_secondary"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox5"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox5"
+            app:layout_constraintStart_toStartOf="@+id/checkBox5"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox3"
+            app:useMaterialThemeColors="false" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="77dp"
+            android:layout_marginBottom="17dp"
+            android:background="@color/white"
+            android:hapticFeedbackEnabled="true"
+            android:text="CheckBox"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/design_default_color_secondary"
+            android:textColorHint="@color/black"
+            android:textColorLink="@color/design_default_color_secondary"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox2"
+            app:layout_constraintStart_toStartOf="@+id/checkBox2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:useMaterialThemeColors="false" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="21dp"
+            android:background="@color/white"
+            android:hapticFeedbackEnabled="true"
+            android:text="CheckBox"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/design_default_color_secondary"
+            android:textColorHint="@color/black"
+            android:textColorLink="@color/design_default_color_secondary"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox3"
+            app:layout_constraintStart_toStartOf="@+id/checkBox3"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox"
+            app:useMaterialThemeColors="false" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="22dp"
+            android:background="@color/white"
+            android:hapticFeedbackEnabled="true"
+            android:text="CheckBox"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/design_default_color_secondary"
+            android:textColorHint="@color/black"
+            android:textColorLink="@color/design_default_color_secondary"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox4"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox4"
+            app:layout_constraintStart_toStartOf="@+id/checkBox4"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+            app:useMaterialThemeColors="false" />
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="49dp"
+            android:layout_marginBottom="93dp"
+            android:text="Continue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/checkBox6"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soundwave_background"
+
+
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/snip_city"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="105dp"
+        android:background="@color/white"
+        android:hapticFeedbackEnabled="false"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snip_state"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Spinner
+        android:id="@+id/snip_state"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="22dp"
+        android:background="@color/white"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/snip_city"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snip_country" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="31dp"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snip_city" />
+
+    <EditText
+        android:id="@+id/edt_mobno"
+        android:layout_width="223dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/enter_your_mobile_no"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/snip_country"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="224dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="36dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/enter_your_name"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/edt_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="223dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="29dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/enter_your_email"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/edt_mobno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_name"
+        tools:ignore="TextFields"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="181dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="43dp"
+        android:rotationY="29"
+        android:text="@string/soundwave"
+        android:textColor="#546E7A"
+        android:textSize="30sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/edt_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <Spinner
+        android:id="@+id/snip_country"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="19dp"
+        android:background="@color/white"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/snip_state"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_mobno" />
+</androidx.constraintlayout.widget.ConstraintLayout>
